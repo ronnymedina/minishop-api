@@ -1,0 +1,5 @@
+djangorestframework==3.12.1
+Markdown==3.3.2
+django-filter==2.4.0
+mysqlclient==2.0.1
+djangorestframework-simplejwt==4.4.0

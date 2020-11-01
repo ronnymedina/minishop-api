@@ -1,0 +1,1 @@
+https://django-rest-framework-simplejwt.readthedocs.io/en/latest/creating_tokens_manually.html

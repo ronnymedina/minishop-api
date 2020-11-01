@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  minishopdb:
+    image: mysql:5.7
+    # command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: minishopdb
+    ports:
+      - '3306:3306'
+    volumes:
+      - my-db:/var/lib/mysql
+#   app:
+#     environment:
+#       DATABASE_URL: 'mysql+mysqldb://root:root@db:3306/minishop'
+#     build: .
+#     ports:
+#       - '5000:5000'
+#     volumes:
+#       - .:/app
+volumes:
+  my-db:
