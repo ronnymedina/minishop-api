@@ -1,11 +1,10 @@
-from rest_framework import routers
 from django.urls import include, path
+from rest_framework import routers
 
-from users.views import UserViewSet
-
+from shops.views import ShopsViewSet
 
 router = routers.DefaultRouter()
-router.register(r'/', UserViewSet)
+router.register(r'', ShopsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

@@ -24,6 +24,7 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('admin', admin.site.urls),
     path('users', include('users.urls')),
+    path('shops', include('shops.urls')),
 
     # authentication with json web token
     path('api/auth', TokenObtainPairView.as_view(), name='token_obtain_pair'),
